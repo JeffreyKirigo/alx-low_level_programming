@@ -7,14 +7,8 @@
  */
 int main(void)
 {
-	printf("Size of a char: %d byte(s)\n
-			Size of int: %d byte(s)\n
-			Size of long int: %d byte(s)\n
-			Size of long long int: %d byte(s)\n
-			Size of float: %d byte(s)",sizeOf(char),
-			sizeOf(int),
-			sizeOf(long int),
-			sizeOf(long long int),
-			sizeOf(float));
+	long long int long_l_int;
+	long int long_int;
+	printf("Size of a char: %lu byte(s)\nSize of int: %lu byte(s)\nSize of long int: %lu byte(s)\nSize of long long int: %lu byte(s)\nSize of float: %lu byte(s)\n",sizeof(char),sizeof(int),sizeof(long_int),sizeof(long_l_int),sizeof(float));
     return (0);
 }
