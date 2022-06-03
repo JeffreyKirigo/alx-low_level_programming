@@ -9,6 +9,13 @@ int main(void)
 {
 	long long int long_l_int;
 	long int long_int;
-	printf("Size of a char: %lu byte(s)\nSize of int: %lu byte(s)\nSize of long int: %lu byte(s)\nSize of long long int: %lu byte(s)\nSize of float: %lu byte(s)\n",sizeof(char),sizeof(int),sizeof(long_int),sizeof(long_l_int),sizeof(float));
+
+	printf("Size of a char: %lu byte(s)\n
+			Size of an int: %lu byte(s)\n
+			Size of a long int: %lu byte(s)\n
+			Size of a long long int: %lu byte(s)\n
+			Size of a float: %lu byte(s)\n",
+			sizeof(char), sizeof(int), sizeof(long_int),
+			sizeof(long_l_int), sizeof(float));
     return (0);
 }
