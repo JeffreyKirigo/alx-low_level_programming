@@ -14,10 +14,9 @@ int main(void)
 	char str;
 
 	for (str = 'a'; str <= 'z' ; str++)
-	{
 		putchar(str);
+	for (str = 'a'; str <= 'z' ; str++)
 		putchar(toupper(str));
-	}
 	putchar('\n');
 	return (0);
 
