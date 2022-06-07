@@ -11,7 +11,7 @@ int main(void)
 
 	int i = 0;
 
-	while (i<ch)
+	while (i<ch.length)
 	{
 		_putchar(ch[i]);
 		i++;
