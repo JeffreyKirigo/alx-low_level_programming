@@ -19,7 +19,7 @@ void jack_bauer(void)
 			hours_max = 3;
 		}
 		hours1 = 0;
-		while (hours1 <= a)
+		while (hours1 <= hours_max)
 		{
 			min2 = 0;
 			while (min2 <= 5)
