@@ -8,7 +8,9 @@
  */
 void jack_bauer(void)
 {
-	int hours1, hours2 , min1, min2 , hours_max;
+	int hours1, hours2, min1, min2, hours_max;
+
+	hours_max = 9;
 
 	hours2 = 0;
 	while (hours2 <= 2)
