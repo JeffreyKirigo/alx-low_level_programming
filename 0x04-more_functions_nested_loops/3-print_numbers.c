@@ -6,7 +6,7 @@
  */
 void print_numbers(void)
 {
-	char start;
+	int start;
 
 	for (start  = '0' start <= '9' start++)
 		_putchar(start);
