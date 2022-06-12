@@ -14,7 +14,6 @@ void print_triangle(int size)
 	{
 		for (column = 0; column < size; column++)
 		{
-		
 			for (row = 0; row < size; row++)
 			{
 				if (row < n)
