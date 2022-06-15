@@ -2,8 +2,8 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s - Character to change to integer
- * Return: integer 
+ * @s: Character to change to integer
+ * Return: integer
  */
 int _atoi(char *s)
 {
@@ -16,14 +16,14 @@ int _atoi(char *s)
 		if (size > 0 && (*(s + count) < 48 || *(s + count) > 57))
 			break;
 		if (*(s + count) == 45)
-			positive_negative *= - 1;
+			positive_negative *= -1;
 		if (*(s + count) >= 48 && (*(s + count) <= 57))
 		{
 			if (size > 0)
 				m *= 10;
 			size = size + 1;
 		}
-		count++;	
+		count++;
 	}
 	for (i = count - size; i < count; i++)
 	{
