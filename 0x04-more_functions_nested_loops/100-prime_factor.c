@@ -1,22 +1,23 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - entry of the program
  * Return: 0 Success
  */
 
-int prime_numbers(int number)
+int main(void)
 {
-	
-	int primenumber;
+	long int number = 612852475143;
 
-	for (primenumber = 2; primenumber <= number; primenumber++)
+	long int primenumber;
+
+	for (primenumber = 2; primenumber < number; primenumber++)
 	{
-		if (primenumber % 1 == 0 && primenumber % primenumber == 0)
+		if (number % primenumber == 0)
 		{
-			printf("%d, ",primenumber);
+			number = number / primenumber;
 		}
 	}
+	printf("%ld\n", primenumber);
 	return (0);
 }
