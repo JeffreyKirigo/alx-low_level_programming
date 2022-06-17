@@ -11,6 +11,12 @@ char *cap_string(char *str)
 
 	int delim[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
+	count = 0;
+
+	if ((str[count] >= 97) && (str[count] <= 122))
+		str[count] = str[count] - 32;
+	count++;
+
 	while (str[count] != '\0')
 	{
 		i = 0;
