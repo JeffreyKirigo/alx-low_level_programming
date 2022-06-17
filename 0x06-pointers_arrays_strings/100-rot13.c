@@ -13,15 +13,16 @@ char *rot13(char *str)
 
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	count = 0, i = 0;
+	count = 0;
 
-	while (str[count] != '\0')
+	while (*(str + count) != '\0')
 	{
+		i = 0;
 		while (i < 52)
 		{
-			if (str[count] == alphabet[i])
+			if (*(str + count) == alphabet[i])
 			{
-				str[count] = rot13[i];
+				*(str + count) = rot13[i];
 				break;
 			}
 			i++;
