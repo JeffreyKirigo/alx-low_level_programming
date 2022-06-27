@@ -1,2 +1,2 @@
-#C - Static libraries  
-##Build your own C static library
+# C - Static libraries  
+## Build your own C static library
