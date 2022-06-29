@@ -1,56 +1,45 @@
 #include "main.h"
 #include <stdlib.h>
-/**
- * _strlen - gets length of a string
- * @s: input type pointer to char
- * Return: length of string
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-	}
-	return (len);
-}
 
 /**
- * str_concat - concat 2 strings
- * @s1: input string
- * @s2: input string
- * Return: char
+ * str_concat - concatenates two strings.
+ * @s1: first string.
+ * @s2: second string.
+ *
+ * Return: pointer of an array of chars
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1, len2, len_full;
+	char *conc;
+	unsigned int len1, len2, k, limit, full_len;
 
-	char *temp, *fin;
-
-	if (!s1)
+	if (s1 == NULL)
 		s1 = "";
-	else if (!s2)
+	if (s2 == NULL)
 		s2 = "";
-	else
+
+	for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
+
+	for (len2 = 0; s2[len2] != '\0'; len2++)
+		;
+
+	full_len = len1 + len2 + 1;
+
+	conc = malloc(sizeof(char) * full_len);
+
+	if (conc == NULL)
 	{
-		len1 = _strlen(s1);
-		len2 = _strlen(s2);
+		free(conc);
+		return (NULL);
 	}
 
-	len_full = len1 + len2 + 1;
+	for (k = 0; k < len1; k++)
+		conc[k] = s1[k];
 
-	fin = malloc(sizeof(char) * (len_full));
+	limit = len2;
+	for (len2 = 0; len2 <= limit; k++, len2++)
+		conc[k] = s2[len2];
 
-	if (!fin)
-		return (0);
-
-	temp = fin;
-
-	while (*s1)
-		*temp++ = *s1++;
-	while ((*temp++ = *s2++))
-		;
-	return (fin);
+	return (conc);
 }
