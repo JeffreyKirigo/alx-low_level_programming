@@ -11,7 +11,7 @@ char *_strdup(char *str)
 
 	char *cp;
 
-	if(!str)
+	if (!str)
 		return (NULL);
 
 	while (*(str + len))
