@@ -4,9 +4,9 @@
  * arryay_range - creates an array of integers
  * @min: minimum
  * @max: maximum
- * Return: arryay
+ * Return: array
  */
-int *arryay_range(int min, int max)
+int *array_range(int min, int max)
 {
 	int *arry, i = 0, t = min;
 
