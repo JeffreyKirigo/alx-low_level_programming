@@ -4,3 +4,4 @@ main.c
 !*.c
 !*.h
 !.gitignore
+!Makefile
