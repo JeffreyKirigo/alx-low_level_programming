@@ -6,7 +6,7 @@
  * main - main
  * @argc: number of lines
  * @argv: array of elements
- * xeturn: 0
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
