@@ -5,9 +5,9 @@
  * @head: head
  * Return: void
  */
-void free_list(list_l *head)
+void free_list(list_t *head)
 {
-	list_l *list;
+	list_t *list;
 
 	while ((list = head) != NULL)
 	{
