@@ -2,4 +2,4 @@
 !*.c
 !*.h
 0-main.c
-/tests/*
+tests/*
