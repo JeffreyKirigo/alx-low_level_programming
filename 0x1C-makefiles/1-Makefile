@@ -1,11 +1,7 @@
-all: school clean
+all: school
 
 CC =  gcc
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 
 school:
 	${CC} ${SRC} -o school
-
-clean:
-	@rm school
-
