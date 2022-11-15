@@ -15,4 +15,4 @@ fclean:	clean oclean
 all:    $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-re: oclean all
+re: fclean all
